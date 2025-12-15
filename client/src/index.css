@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Legacy Theme Colors */
+  --primary: #0E207F;
+  /* SM_BLUE */
+  --primary-hover: #09165a;
+  --secondary: #333B3D;
+  /* SM_DARK_GRAY (Text) */
+  --neutral: #D9D9D9;
+  /* SM_LIGHT_GRAY */
+
+  /* Light Theme Backgrounds */
+  --bg-main: #ffffff;
+  --bg-card: #f8f9fa;
+  --bg-input: #ffffff;
+
+  /* Text */
+  --text-main: #333B3D;
+  --text-muted: #666666;
+  --text-inverse: #ffffff;
+
+  --radius: 4px;
+  /* MUI default is squarer */
+  --shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* MUI style */
+  letter-spacing: 0.02857em;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Buttons (MUI Style) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  border-radius: var(--radius);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--primary);
+  color: var(--text-inverse);
+  box-shadow: var(--shadow);
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid rgba(14, 32, 127, 0.5);
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(14, 32, 127, 0.04);
+  border-color: var(--primary);
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 16.5px 14px;
+  border-radius: var(--radius);
+  background-color: var(--bg-input);
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--primary);
+  border-width: 2px;
+  padding: 15.5px 13px;
+  /* Adjust for border width change to keep layout stable */
+}
+
+/* Cards */
+.card {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid #e0e0e0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  margin-bottom: 0.35em;
+  color: var(--primary);
+  /* Branding */
+}

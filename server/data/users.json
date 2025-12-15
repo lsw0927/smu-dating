@@ -1,0 +1,130 @@
+[
+  {
+    "studentId": "admin",
+    "email": "admin@uni.edu",
+    "password": "pass",
+    "name": "Admin User",
+    "gender": "Other",
+    "schedule": [],
+    "likes": [],
+    "matches": []
+  },
+  {
+    "studentId": "123456789",
+    "email": "test1@gmail.com",
+    "password": "password",
+    "name": "Sangwon Lee",
+    "gender": "남자",
+    "schedule": [
+      {
+        "className": "HALF",
+        "day": "수요일",
+        "time": "12:00",
+        "endTime": "15:00"
+      }
+    ],
+    "likes": [
+      "987654321",
+      "467913",
+      "12345"
+    ],
+    "matches": [
+      "987654321",
+      "467913",
+      "12345"
+    ]
+  },
+  {
+    "studentId": "987654321",
+    "email": "test2@gmail.com",
+    "password": "password",
+    "name": "Hahyun Choi",
+    "gender": "여자",
+    "schedule": [
+      {
+        "className": "HALF",
+        "day": "수요일",
+        "time": "12:00",
+        "endTime": "15:00"
+      }
+    ],
+    "likes": [
+      "123456789"
+    ],
+    "matches": [
+      "123456789"
+    ]
+  },
+  {
+    "studentId": "467913",
+    "email": "test3@gmail.com",
+    "password": "password",
+    "name": "SAN RIO",
+    "gender": "여자",
+    "schedule": [
+      {
+        "className": "HALF",
+        "day": "수요일",
+        "time": "12:00",
+        "endTime": "15:00"
+      }
+    ],
+    "likes": [
+      "123456789"
+    ],
+    "matches": [
+      "123456789"
+    ]
+  },
+  {
+    "studentId": "12345",
+    "email": "test4@gmail.com",
+    "password": "password",
+    "name": "최하현",
+    "gender": "여자",
+    "schedule": [
+      {
+        "className": "HALF",
+        "day": "수요일",
+        "time": "12:00",
+        "endTime": "15:00"
+      }
+    ],
+    "likes": [
+      "123456789",
+      "123"
+    ],
+    "matches": [
+      "123456789",
+      "123"
+    ]
+  },
+  {
+    "studentId": "123",
+    "email": "test5@gmail.com",
+    "password": "password",
+    "name": "Sang",
+    "gender": "남자",
+    "schedule": [
+      {
+        "className": "HALF",
+        "day": "수요일",
+        "time": "12:00",
+        "endTime": "15:00"
+      },
+      {
+        "className": "HALZ",
+        "day": "수요일",
+        "time": "09:00",
+        "endTime": "12:00"
+      }
+    ],
+    "likes": [
+      "987654321",
+      "12345"
+    ],
+    "matches": [
+      "12345"
+    ]
+  }
+]
