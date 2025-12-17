@@ -26,7 +26,7 @@ const Login = () => {
                 setError(data.error);
             }
         } catch (err) {
-            setError('Failed to connect to server');
+            setError('서버 연결 실패');
         }
     };
 

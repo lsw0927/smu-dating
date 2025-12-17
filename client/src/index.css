@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-  /* Legacy Theme Colors */
+  /* 테마색 */
   --primary: #0E207F;
-  /* SM_BLUE */
+  /* 상명블루 */
   --primary-hover: #09165a;
   --secondary: #333B3D;
-  /* SM_DARK_GRAY (Text) */
+  /* 상명다크그레이 (Text) */
   --neutral: #D9D9D9;
-  /* SM_LIGHT_GRAY */
+  /* 상명밝은그레이 */
 
-  /* Light Theme Backgrounds */
+  /* 백그라운드s */
   --bg-main: #ffffff;
   --bg-card: #f8f9fa;
   --bg-input: #ffffff;
@@ -21,7 +21,7 @@
   --text-inverse: #ffffff;
 
   --radius: 4px;
-  /* MUI default is squarer */
+  /* MUI 스퀘어 */
   --shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   --font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
@@ -51,18 +51,18 @@ button {
   font-family: inherit;
   font-weight: 500;
   text-transform: uppercase;
-  /* MUI style */
+  /* MUI 스탈 */
   letter-spacing: 0.02857em;
 }
 
-/* Utilities */
+/* 유틸 */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
-/* Buttons (MUI Style) */
+/* 버튼들 */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -91,7 +91,6 @@ button {
   border-color: var(--primary);
 }
 
-/* Inputs */
 .input {
   width: 100%;
   padding: 16.5px 14px;
@@ -109,10 +108,8 @@ button {
   border-color: var(--primary);
   border-width: 2px;
   padding: 15.5px 13px;
-  /* Adjust for border width change to keep layout stable */
 }
 
-/* Cards */
 .card {
   background-color: var(--bg-card);
   padding: 1.5rem;
@@ -159,5 +156,4 @@ h3 {
   font-weight: 500;
   margin-bottom: 0.35em;
   color: var(--primary);
-  /* Branding */
 }

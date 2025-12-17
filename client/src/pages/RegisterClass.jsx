@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 
 const RegisterClass = () => {
-    const { user, login } = useAuth(); // login updates the user state
+    const { user, login } = useAuth(); // 로그인, 사용자 업뎃
     const navigate = useNavigate();
 
     const [schedule, setSchedule] = useState(user.schedule || []);

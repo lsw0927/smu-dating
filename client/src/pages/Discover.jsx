@@ -18,7 +18,7 @@ const Discover = () => {
                     setRecommendations(data);
                 }
             } catch (err) {
-                console.error("Failed to load recommendations");
+                console.error("로드하지 못했습니다.");
             } finally {
                 setLoading(false);
             }

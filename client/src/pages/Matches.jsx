@@ -21,7 +21,7 @@ const Matches = () => {
                     setMatches(data);
                 }
             } catch (err) {
-                console.error("Failed to load matches");
+                console.error("매칭 실패!");
             }
         };
         fetchMatches();
@@ -37,7 +37,6 @@ const Matches = () => {
                 });
                 if (res.ok) {
                     const data = await res.json();
-                    // Process messages to be UI friendly
                     const uiMessages = data.map(m => ({
                         ...m,
                         time: new Date(m.timestamp).toLocaleTimeString()
@@ -45,7 +44,7 @@ const Matches = () => {
                     setMessages(uiMessages);
                 }
             } catch (err) {
-                console.error("Failed to load messages");
+                console.error("메세지 불러오기 실패!");
             }
         };
 
@@ -78,7 +77,7 @@ const Matches = () => {
                     setNewMessage('');
                 }
             } catch (err) {
-                console.error("Failed to send message");
+                console.error("메세지 전송 실패!");
             }
         }
     };
